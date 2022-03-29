@@ -1,4 +1,7 @@
-# vite+vueRouter+pinia+arcoDesign  pnpm
+# 使用的技术栈
+
+> vite+vueRouter+pinia+arcoDesign  
+> 依赖下载工具pnpm
 
 # 修改"@"路径名
 
