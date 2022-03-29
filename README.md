@@ -1,3 +1,5 @@
+# vite+vueRouter+pinia+arcoDesign  pnpm
+
 # 修改"@"路径名
 
 - 安装依赖
