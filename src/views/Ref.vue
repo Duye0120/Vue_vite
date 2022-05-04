@@ -1,15 +1,12 @@
 <template>
-  <div class="home">
-    <h1>this is home page</h1>
-  </div>
+  <h1>1111</h1>
 </template>
 
 <script lang="ts" setup>
-
 </script>
 
-<style>
-.home {
+<style lang="less">
+h1 {
   color: black;
 }
 </style>

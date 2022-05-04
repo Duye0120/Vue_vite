@@ -49,7 +49,7 @@ export default defineConfig({
 }
 ```
 
-#Day 2
+# Day 2
 
 ## 第一个问题,如果通过Slots来控制content内容
 

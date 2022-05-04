@@ -1,11 +1,15 @@
-<script lang="ts" setup>
-import { useHomeStore } from '@/stores/home';
-const home = useHomeStore();
-</script>
-
 <template>
   <div class="home">
-    <h1>{{ home.count }}</h1>
-    <button @click="home.increment()">up</button>
+    <h1>this is homepage</h1>
   </div>
 </template>
+
+<script lang="ts" setup>
+
+</script>
+
+<style>
+.home {
+  color: black;
+}
+</style>
