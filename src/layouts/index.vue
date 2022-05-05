@@ -25,12 +25,11 @@
       </template>
     </a-layout-sider>
     <a-layout>
-      <a-layout-header style="padding-left: 20px;margin-bottom: 24px;">Header</a-layout-header>
-      <a-layout style="padding: 0 24px;">
+      <a-layout-header style="padding-left: 20px;">Header</a-layout-header>
+      <a-layout style="padding: 24px 24px;">
         <a-layout-content>
           <router-view></router-view>
         </a-layout-content>
-        <a-layout-footer>Footer</a-layout-footer>
       </a-layout>
     </a-layout>
   </a-layout>

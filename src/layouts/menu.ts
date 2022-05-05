@@ -3,12 +3,19 @@ export const menu = [
     title: 'day01',
     content: [
       { name: 'ref属性', key: 'ref' },
+      { name:'component标签', key:'component'},
     ],
   },
   {
     title: 'pinia',
     content: [
       { name: 'pinia使用方法', key: 'piniaUse' },
+    ]
+  },
+  {
+    title: '个人信息',
+    content: [
+      { name: '个人简历', key: 'info' },
     ]
   }
 ]
