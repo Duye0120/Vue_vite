@@ -11,10 +11,6 @@ import { ref } from 'vue';
 const name = '杜也';
 const age = 18;
 const sex = '男';
-const count = ref(0);
-watch(count, (count, prevCount) => {
-  console.log(count);
-})
 </script>
 
 <style lang='less' scoped>

@@ -8,6 +8,17 @@
       </a-space>
       <School ref="school" />
     </div>
+    <a-typography>
+      <a-typography-title :heading="6">
+        Ref属性
+      </a-typography-title>
+      <a-typography-paragraph>
+        ref是一个特殊的attribute，它允许我们在特定的DOM元素或子组件实例被挂载后获得对它的直接引用。
+      </a-typography-paragraph>
+      <a-typography-paragraph>
+        用处：在组件挂载时，聚焦在某个元素上，或在挂载的时候初始化一个第三方库。
+      </a-typography-paragraph>
+    </a-typography>
   </a-space>
 </template>
 

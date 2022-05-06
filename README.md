@@ -124,3 +124,46 @@ export const useHomeStore = defineStore({
   }
 })
 ```
+
+## component-组建基础
+
+以`.vue`结尾的文件，通常会被叫做单文件组件(简称SFC)
+```ts
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count++">You clicked me {{ count }} times.</button>
+</template>
+```
+
+使用组件和vue差不多，如果是setup语法，就直接导入使用就行,两种写法
+```js
+<template>
+  <xxx></xxx>
+  <xxx />
+</template>
+<script setup>
+import xxx from 'xxx/xxx/xxx'
+</script>
+```
+
+### slot插槽语法
+这个可以直接去`@/components/School.vue`里面看，大概意思就是当你在使用代码的时候，如果不是闭合标签，那么标签内部的内容啥的，会直接在slot地方展示，类似于`react`里面`children`.
+
+> **提到组件，就不得不提到props，传递数据**
+
+在vue中，定义props的几种方法
+```js
+// 直接定义props
+const props = defineProps(['xxx','xxx','xx'])
+// ts定义数据类型
+const props = defineProps({
+  name: String,
+  age: Number,
+  sex: String,
+})
+```

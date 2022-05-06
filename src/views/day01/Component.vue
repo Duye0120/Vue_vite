@@ -12,49 +12,34 @@
       </a-menu-item>
       <a-menu-item key="test1">Home</a-menu-item>
       <a-menu-item key="test2">Solution</a-menu-item>
-      <a-menu-item key="3">Cloud Service</a-menu-item>
-      <a-menu-item key="4">Cooperation</a-menu-item>
     </a-menu>
-    <component :is="select" />
+    <div>{{ select }}</div>
+    <School>1111</School>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-const test1 = { template: '<div style="color:black">test1</div>' };
-const test2 = { template: '<div>test2</div>' };
-export default defineComponent({
-  components: {
-    test1, test2
-  },
-  data() {
-    return {
-      select: 'test1',
-    };
-  },
-  computed: {},
-  watch: {},
-  methods: {
-    menuItemClick(key: any) {
-      this.select = key;
-    },
-  },
-  created() { },
-  mounted() { },
-  beforeCreate() { },
-  beforeMount() { },
-  beforeUpdate() { },
-  updated() { },
-  beforeDestroy() { },
-  destroyed() { },
-  activated() { },
-})
+<script lang="ts" setup>
+import { ref, watch } from 'vue';
+import School from '@/components/School.vue';
+
+const select = ref('test1');
+function menuItemClick(key: any) {
+  select.value = key;
+};
+watch(select, (val: any) => {
+  console.log(val);
+});
 </script>
+
 <style lang='less' scoped>
 //@import url(); 引入公共css类
 .component {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+}
+
+div {
+  color: black;
 }
 </style>

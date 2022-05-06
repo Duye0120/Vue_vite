@@ -2,6 +2,7 @@
   <div class="test">
     <h2>名称：{{ name }}</h2>
     <h2>地址：{{ address }}</h2>
+    <slot />
   </div>
 </template>
 
