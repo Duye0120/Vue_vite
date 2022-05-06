@@ -1,5 +1,8 @@
 <template>
-  <div class="test">test1</div>
+  <div class="test">
+    <h2>名称：{{ name }}</h2>
+    <h2>地址：{{ address }}</h2>
+  </div>
 </template>
 
 <script lang="ts">
@@ -8,7 +11,8 @@ export default {
   components: {},
   data() {
     return {
-
+      name: '杜也',
+      address: '南京',
     };
   },
   computed: {},

@@ -21,8 +21,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import test1 from '@/components/test1.vue';
-import test2 from '@/components/test2.vue';
+const test1 = { template: '<div style="color:black">test1</div>' };
+const test2 = { template: '<div>test2</div>' };
 export default defineComponent({
   components: {
     test1, test2

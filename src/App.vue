@@ -13,4 +13,8 @@ body,
   height: 100%;
   width: 100%;
 }
+
+h1 {
+  color: black;
+}
 </style>

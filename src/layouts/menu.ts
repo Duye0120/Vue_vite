@@ -4,6 +4,7 @@ export const menu = [
     content: [
       { name: 'ref属性', key: 'ref' },
       { name:'component标签', key:'component'},
+      { name:'props属性', key:'props'},
     ],
   },
   {
