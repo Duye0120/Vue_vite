@@ -2,7 +2,7 @@
   <div class="">
     <h1>学生姓名：{{ name }}</h1>
     <h1>学生性别：{{ sex }}</h1>
-    <h1>学生年龄：{{ age }}</h1>
+    <h1>学生年龄：{{ age && age + 1 }}</h1>
   </div>
 </template>
 
