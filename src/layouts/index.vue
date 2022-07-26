@@ -70,6 +70,7 @@ export default defineComponent({
   },
   methods: {
     onClickMenuItem(key: any) {
+      console.log(key, 'key');
       router.push(`/${key}`);
     },
   }

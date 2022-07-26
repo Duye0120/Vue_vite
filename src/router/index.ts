@@ -6,6 +6,7 @@ import PiniaUse from '@/views/PiniaUse.vue';
 import Info from '@/views/Info.vue';
 import Component from '@/views/day01/Component.vue';
 import Props from '@/views/day01/Props.vue';
+import form from './form';
 const routes = [
   { path: '/', name: 'home', component: Home },
   { path: '/about', name: 'about', component: About },
@@ -14,6 +15,7 @@ const routes = [
   { path: '/info', name: 'info', component: Info },
   { path: '/component', name: 'component', component: Component },
   { path: '/props', name: 'props', component: Props },
+  ...form,
 ]
 
 
