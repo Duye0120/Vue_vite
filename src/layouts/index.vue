@@ -3,7 +3,7 @@
     <a-layout-sider collapsible breakpoint="xl">
       <div class="logo" />
       <a-menu :default-selected-keys="path" :style="{ width: '100%' }" @menu-item-click="onClickMenuItem">
-        <a-menu-item key="home" @click="$router.push('/')">
+        <a-menu-item key="home">
           <IconHome />
           首页
         </a-menu-item>
@@ -121,7 +121,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--color-white);
+  color: black;
   font-size: 16px;
   font-stretch: condensed;
   text-align: center;

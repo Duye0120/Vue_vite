@@ -22,7 +22,7 @@ export const menu = [
   {
     title: '表单',
     content: [
-      { name: '基础表单', key: 'form/basicForm' },
+      { name: '基础表单', key: 'basicForm' },
     ]
   }
 ]
