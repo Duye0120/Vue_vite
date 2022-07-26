@@ -15,7 +15,7 @@
         <a-checkbox v-model="formData.isRead"> I have read the manual</a-checkbox>
       </a-form-item>
       <a-form-item field="Section" label="Section">
-        <a-select v-model="formData.section" placeholder="please select" all-clear>
+        <a-select v-model="formData.section" placeholder="please select" allow-clear>
           <a-option value="Section one">Section one</a-option>
           <a-option value="Section two">Section two</a-option>
           <a-option value="Section three">Section three</a-option>
